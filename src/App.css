@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-image: url("./img/clash_of_clans.jpg");
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,6 +22,29 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.btn-outline-warning {
+  color: #ffc107;
+  background-color: #357780 !important;
+  background-image: none;
+  border-color: #ffc107;
+}
+
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+  background-color: #bf823a !important;
+}
+
+table{
+  background-color: #347780 !important;
+}
+
+body {
+  background-image: url("./img/clash_of_clans.jpg");
+  background-color: #cccccc;
 }
 
 .App-link {
