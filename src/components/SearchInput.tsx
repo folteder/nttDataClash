@@ -47,7 +47,8 @@ export default function SearchInput() {
             </div>
             <div className="card">
                 <div className="card-body">
-                    <table className="table table-striped">
+                    <div className="table-responsive">
+                    <table className="table table-sm">
                         <thead>
                             <tr>
                                 <th scope="col">Nombre</th>
@@ -77,6 +78,7 @@ export default function SearchInput() {
                             )}
                         </tbody>
                     </table>
+                    </div>
                 </div>
             </div>
         </div>
