@@ -50,12 +50,11 @@ export default function SearchInput() {
                     <table className="table table-striped">
                         <thead>
                             <tr>
-                                <th>Nombre</th>
-                                <th>País</th>
-                                <th>Liga de guerra</th>
-                                <th>Nivel de clan</th>
-                                <th>Miembros del clan</th>
-                                <th>Insignia</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">País</th>
+                                <th scope="col">Liga de guerra</th>
+                                <th scope="col">Miembros del clan</th>
+                                <th scope="col">Insignia</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -67,12 +66,11 @@ export default function SearchInput() {
                                     return clan
                                 }
                             }).map((r, i) => (
-                                <tr key={i}>
+                                <tr key={i} >
                                     <td>{r.name}</td>
                                     <td>{r.location.name}</td>
                                     <td>{r.warLeague.name}</td>
                                     <td>{r.members}</td>
-                                    <td>{r.clanLevel}</td>
                                     <td><img src={r.badgeUrls.small} alt="" width="30px" /></td>
                                 </tr>
                             )
